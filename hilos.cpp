@@ -11,6 +11,7 @@ mutex cout_mutex;
 
 void DemoThreads() {
     const int num_threads = 3;
+    
     vector<thread> threads;
     CVector<int> vect(10);
 

@@ -127,6 +127,7 @@ public:
     size_t capacity() const { return m_max;   }
     bool   empty()    const { return m_count == 0; }
 
+    
     // (Nivel 2) permitir cout << vector
     template <typename U>
     friend std::ostream& operator<<(std::ostream& os, const CVector<U>& v);
