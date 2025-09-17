@@ -22,6 +22,7 @@ void DemoThreads() {
 
     // Crear y lanzar los threads directamente con emplace_back
     for (int i = 0; i < num_threads; ++i) {
+        
         threads.emplace_back(func, i, std::ref(vect));
     }
 
