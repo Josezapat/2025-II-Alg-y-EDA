@@ -50,6 +50,7 @@ public:
         m_count = m_max = 0;
     }
 
+
     // ----------- Asignaciones (Regla de Cinco) -----------
     // Asignación por copia (copy-and-swap: fuerte seguridad de excepción)
     CVector& operator=(CVector other) { // copia por valor -> ya invoca copy/move según el caso
@@ -94,7 +95,6 @@ public:
         m_max   = nueva_cap;
     }
 
-    // Opcional: reservar capacidad explícitamente
     void reserve(size_t cap) {
         if (cap <= m_max) return;
         T* pTmp = new T[cap];
