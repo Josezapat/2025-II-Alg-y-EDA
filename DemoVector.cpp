@@ -16,11 +16,13 @@ void DemoVector() {
     cout << "vector[0] = " << vector[0] << endl; // TODO (Nivel 1) operator[]
 
     // Probar modificación directa con []
+
     vector[1] = 555;  // cambio un valor usando el operador []
     cout << "Tras modificar vector[1] = 555: " << vector << endl;
 
     // Constructor por copia (Nivel 1)
     cout << "\n=== Prueba del constructor por copia ===\n";
+    
     CVector<int> copia(vector);
     cout << "Copia creada: " << copia << endl;
     copia[0] = 999;
